@@ -83,7 +83,7 @@ Quando a instalação finalizar, reinicie o computador.
 Execute o comando
 
 ```bash
-curl https://raw.githubusercontent.com/LabRobotica/ConfigLab/main/config-users.sh | sudo bash
+wget -c https://raw.githubusercontent.com/LabRobotica/ConfigLab/main/config-users.sh && chmod +x config-users.sh && ./config-users.sh ; rm config-users.sh 
 ```
 
 para
