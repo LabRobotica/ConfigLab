@@ -1,0 +1,69 @@
+##################################################################################
+##										##
+##            Relação entre maquina, função, hostname e MAC adress		##
+##										##
+##################################################################################
+
+Maquina				Função					Hostname		MAC
+
+Controladora Comau C5G Open	Controladora do robô			?		
+Automation PC B&R (LPC)		Modalidade Open da Controladora C5G	c5g-open	
+?				Camera IP				?		
+Desktop Optplex 760		Servidor de Impressão			labrobotica	
+Desktop Optplex 760		Uso Comum				labrobotica5	
+Desktop Optplex 760		Uso Comum				labrobotica4	
+Desktop Optplex 760		Uso Comum				labrobotica3	
+Desktop Optplex 7010		Uso Comum				labrobotica2	
+Desktop Optplex 7010		Uso Comum				labrobotica1	
+
+
+
+
+##################################################################################
+##										##
+##                   Relação entre IP's fixos e maquinas			##
+##										##
+##################################################################################
+
+IP Fixo		Maquina/hostname/função		Modo
+
+200.128.140.20	Camera	IP			DHCP pelo MAC
+200.128.140.15	Servidor de Impressão		Manual
+200.128.140.14	Controladora Comau C5G Open	Manual
+200.128.140.13	Automation PC B&R (LPC)		Manual
+200.128.140.12	*Livre*				Manual
+200.128.140.11	*Livre*				Manual
+
+
+
+
+##################################################################################
+##										##
+##                              Conexões Switch           			##
+##										##
+##################################################################################
+	
+Porta		Cabo		Maquina/hostname/função
+
+1		1		*Livre*				\
+2		2		*Livre*				 \  Sala do Robô.
+3		3		*Livre*				 /
+4		4		*Livre*				/
+
+5		5		labrobotica1			\
+6		6		labrobotica2			 \  Sala do Robô -> Régua da divisória em frente o aquário.
+7		7		labrobotica3			 /
+8		8		Servidor de Impressão		/
+
+9		9		Automation PC B&R (LPC)		\  Régua da divisória atrás da mesa do LPC.
+10		10		Controladora Comau C5G Open	/
+
+11		11		labrobotica4			\  Bancada em frente a porta.
+12		12		labrobotica5			/
+
+13		Aéreo		Camera IP			|  Direto no switch.
+
+14-24				*Livre*
+
+25		Sem N.		Switch Principal		\  Conexões com Switch Externo (Gigabit)
+26				*Livre*				/
