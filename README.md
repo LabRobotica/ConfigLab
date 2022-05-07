@@ -1,4 +1,4 @@
-# Configuração Laboratório
+# Configuração do Laboratório
 
 Manual e scripts de configuração dos computadores do Laboratório de Robótica do Departamento de Engenharia Mecatrônica do CEFET-MG, bem como o mapa de rede e outras informações importantes.
 
@@ -83,7 +83,7 @@ Quando a instalação finalizar, reinicie o computador.
 Execute o comando
 
 ```bash
-curl https://raw.githubusercontent.com/LabRobotica/RobixLinux/main/robix-debian.sh | sudo bash
+curl https://raw.githubusercontent.com/LabRobotica/ConfigLab/main/config-users.sh | sudo bash
 ```
 
 para
